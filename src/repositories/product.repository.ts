@@ -1,4 +1,3 @@
-import { ObjectId } from "mongoose";
 import { getModel } from "../models/product.model";
 import { ProductModelType } from "../types/product.type";
 class ProductsRepository {
