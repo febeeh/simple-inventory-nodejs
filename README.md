@@ -79,6 +79,7 @@ You'll find a PHP demo interface inside the demo/ folder to test the API easily 
 
 - 1: Make sure your Node.js server is running.
 - 2: Serve the demo/ folder via a local PHP server:
+- 3: Add a product first to record transactions.
 
 ---
 
