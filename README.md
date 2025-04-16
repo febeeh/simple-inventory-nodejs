@@ -11,20 +11,24 @@ Additionally, a PHP-based frontend template is available inside the `demo/` fold
 ### 1. Clone the Repository
 
 ### 2. Install Dependencies
+
 ```sh
 npm install
 ```
 
 ### 3. Set env
+
 ```bash
 PORT=3000 # Port for the application
 DB_URI= "MONGODB_URL_HERE" # MongoDB connection URI
 NODE_ENV=development # Environment mode (development, production)
 CORS_ORIGIN=http://localhost:3000 # Allowed CORS origin (eg: url,url)
 ```
-* Replace the DB URI with your MongoDB connection string if different.
+
+- Replace the DB URI with your MongoDB connection string if different.
 
 ### 4. Start the Server
+
 ```bash
 npm run dev
 ```
@@ -37,9 +41,10 @@ The server will start on: http://localhost:3000
 
 ### Inventory
 
-* ```POST /inventory/transaction```
-Record a sale, return, or purchase.
-Example:
+- `POST /inventory/transaction`
+  Record a sale, return, or purchase.
+  Example:
+
 ```json
 {
   "name": "Phone",
@@ -48,20 +53,21 @@ Example:
 }
 ```
 
-* ```GET /inventory/stock```
-Fetch current stock level for all products.
+- `GET /inventory/stock`
+  Fetch current stock level for all products.
 
 ### Product
 
-* ```POST /product/insertProduct```
-Add a new product.
-Example:
+- `POST /product/insertProduct`
+  Add a new product.
+  Example:
+
 ```json
 { "name": "Test Product" }
 ```
 
-* ```GET /product/getProducts```
-Fetch all products.
+- `GET /product/getProducts`
+  Fetch all products.
 
 ---
 
@@ -70,9 +76,10 @@ Fetch all products.
 You'll find a PHP demo interface inside the demo/ folder to test the API easily from a browser:
 
 ### To Use:
-#### 1: Make sure your Node.js server is running.
-#### 12: Serve the demo/ folder via a local PHP server:
+
+- 1: Make sure your Node.js server is running.
+- 2: Serve the demo/ folder via a local PHP server:
 
 ---
 
-### Note: The PHP template communicates with the running Node.js API on localhost:3000. Ensure both are up.
+- Note: The PHP template communicates with the running Node.js API on localhost:3000. Ensure both are up.
