@@ -6,7 +6,7 @@ class ProductsRepository {
     // To insert product
   ---------------------*/
   insertProduct = async (
-    data: Omit<ProductModelType, "createdAt" | "updatedAt">
+    data: Omit<ProductModelType, "createdAt" | "updatedAt" | "_id">
   ): Promise<ProductModelType> => {
     try {
       const result = await new this.ProductsModel(data).save();

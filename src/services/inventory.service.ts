@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import { InventoryTransactionsRepository } from "../repositories/inventory.repository";
 import { ProductsRepository } from "../repositories/product.repository";
 import { InventoryTransactionModelType } from "../types/inventory.type";

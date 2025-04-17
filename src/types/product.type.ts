@@ -2,7 +2,7 @@ import { ObjectId } from "mongoose";
 
 // Interface for Product
 export interface ProductModelType {
-  _id?: ObjectId | any;
+  _id: ObjectId;
   name: string;
   createdAt: Date;
   updatedAt: Date;
