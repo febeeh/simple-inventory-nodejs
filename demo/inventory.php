@@ -46,7 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $productId = null;
 
         // Find the product ID by name
-        $productId = null;
         foreach ($products as $p) {
             if ($p["name"] === $productName) {
                 $productId = $p["_id"];
