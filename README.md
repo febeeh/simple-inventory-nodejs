@@ -47,7 +47,7 @@ The server will start on: http://localhost:3000
 
 ```json
 {
-  "name": "Phone",
+  "productId": "67ffa27c62e23621105dc928",
   "quantity": "2",
   "type": "purchase"
 }
