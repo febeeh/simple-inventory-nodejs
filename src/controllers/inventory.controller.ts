@@ -9,9 +9,9 @@ class InventoryController {
   ---------------------*/
   insertInventoryTransaction = async (req: Request, res: Response) => {
     try {
-      const { productName, quantity, type } = req.body;
+      const { productId, quantity, type } = req.body;
 
-      if (!productName || !quantity || !type) {
+      if (!productId || !quantity || !type) {
         res.status(400).json({ error: "All fields are required" });
         return;
       }
@@ -28,7 +28,7 @@ class InventoryController {
 
       const result: InventoryTransactionModelType =
         await inventoryService.insertInventoryTransaction(
-          productName,
+          productId,
           quantity,
           type
         );

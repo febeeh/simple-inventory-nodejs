@@ -13,12 +13,13 @@ const productsRepository: ProductsRepository = new ProductsRepository();
     // To insert car data
   ---------------------*/
 export const insertInventoryTransaction = async (
-  name: string,
+  productId: string,
   quantity: number,
   type: string
 ): Promise<InventoryTransactionModelType> => {
   try {
-    const product = await productsRepository.getProduct({ name: name });
+    console.log("productId: ", productId);
+    const product = await productsRepository.getProduct({ _id: productId });
     if (!product) {
       throw "Product not found";
     }
