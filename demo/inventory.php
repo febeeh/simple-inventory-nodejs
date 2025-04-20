@@ -164,25 +164,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </form>
     </div>
 
-    <script>
-        function toggleForm() {
-            document.getElementById("transactionForm").classList.toggle("visible");
-        }
-
-        function toggleProductForm() {
-            const form = document.getElementById("productForm");
-            form.style.display = form.style.display === "none" ? "block" : "none";
-        }
-
-        const form = document.querySelector('#transactionForm');
-        form.addEventListener('submit', function(e) {
-            const quantity = document.querySelector('input[name="quantity"]').value;
-            if (quantity < 1) {
-                alert('Quantity must be above 0');
-                e.preventDefault();
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
